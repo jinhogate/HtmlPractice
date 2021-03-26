@@ -1,0 +1,116 @@
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .main-item{
+    width: 100%;
+}
+main .main-item:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-item:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**
+* Gestion du header
+**/
+#header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blue;
+    background-color: lightgray;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1.6em;
+    word-spacing: 2em;
+    text-align: center;
+    width: 70%;
+}
+
+
+/**
+* Gestion des h2
+**/
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkred;
+    font-size: 18px;
+    letter-spacing: 1.4em;
+}
+
+
+/**
+* Gestion année
+**/
+.years{
+    font-weight: bold;
+}
+
+
+/**
+* Gestion text normal
+**/
+
+.text-normal{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+/**
+* Disposition des elements
+**/
+#content{
+    margin-top: 30px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+#content .item{
+    margin-bottom: 20px;
+}
+#content .item:nth-child(1) h2, #content .item:nth-child(2) h2{
+    margin-bottom: 0;
+}
+
+/**
+* Gestion education et prof experience
+**/
+/*Gestion education*/
+.education h2 ~ div, .profexperience h2 ~ div{
+    padding-left: 10px;
+}
+.education1,.education2,.education3{
+    display: flex;
+}
+.education1 div:first-child,.education2 div:first-child,.education3 div:first-child{
+    margin-right: 230px;
+}
+.education > div:nth-of-type(n+2){
+    margin-top: 20px;
+}
+.education1 div:last-child,.education2 div:last-child,.education3 div:last-child{
+    width: 20%;
+}
+/*Gestion professional experience*/
+.profexperience1,.profexperience2{
+    display: flex;
+}
+.profexperience1 div:first-child,.profexperience2 div:first-child{
+    margin-right: 230px;
+}
+.profexperience > div:nth-of-type(n+2){
+    margin-top: 20px;
+}
+.profexperience1 div:last-child,.profexperience2 div:last-child{
+    width: 28%;
+}
